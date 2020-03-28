@@ -1,7 +1,7 @@
 function vote(cm) {
 	return async function (req, res) {
 		if (req.body) {
-			var ip = req.headers["x-forwarded-for"].split(",").slice(-1)[0];
+			var ip = req.headers["x-forwarded-for"].split(", ").slice(-1)[0];
 			const status = await cm.vote(req.body.candidate, ip);
 			if (status == cm.constructor.SUCCESS) {
 				res.json({
