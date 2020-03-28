@@ -1,0 +1,61 @@
+<head>
+	<title>L'Hopital Election</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<script defer src="src/main.js"></script>
+	<base target="_blank">
+</head>
+
+<body>
+	<h1>L'Hopital Election</h1>
+	<div class="candidate">
+		<img id="cptzero" src="img/cptzero.jpg">
+		<h2>Captain Zero</h2>
+		<p id="cptzero-votes">Votes: {{cptzeroVotes}}</p>
+		<button id="cptzero-button">Vote</button>
+	</div>
+	<div class="candidate">
+		<img id="infinitus" src="img/infinitus.jpg">
+		<h2>Infinitus</h2>
+		<p id="infinitus-votes">Votes: {{infinitusVotes}}</p>
+		<button id="infinitus-button">Vote</button>
+	</div>
+	
+	<div id="cptzero-modal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2>Zeroist Political Papers</h2>
+				<span class="close">×</span>
+			</div>
+			<div class="modal-body">
+				<a href="https://docs.google.com/document/d/1p4S7PTx7Ensa3Pv8ZicrZUkPr6rOYpeCgTgvN7gTwxg/preview">Zeroist Manifesto</a><br>
+				<a href="https://docs.google.com/document/d/19J4KX3btCPEzXGoGUZcCtXmKwI3ja_fKfU8SMAQE7K4/preview">Every Constant a Zero</a><br>
+				<a href="https://docs.google.com/document/d/14kE8pGGOpD-5OLOgy9vVJEL2CeSis_SJlDaMhQSgd1A/preview">History of the Great Victories of Captain Zero</a><br>
+				<a href="https://drive.google.com/drive/folders/1tC8hC1Mt2yXxNtWSEPYf7ILeQYKDiOod" class="suggestions">Suggestions</a>
+			</div>
+			<div class="modal-footer">
+				<h3>All hail Captain Zero!</h3>
+			</div>	
+  		</div>
+	</div>
+	<div id="infinitus-modal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2>Infinite Political Papers</h2>
+				<span class="close">×</span>
+			</div>
+			<div class="modal-body">
+				<a href="https://docs.google.com/document/d/1WHBF6mivf3DB87PZy1_oT9dqQDUDzi2NbA2EByvH74o/preview">We Choose to Go to Infinity</a><br>
+				<a href="https://docs.google.com/document/d/1w5mzU2QSHPAsHyn8-91A5mR1d0gJ5iwM_yKDdsL5zAs/preview">La Chanson de Infini</a><br>
+				<a href="https://drive.google.com/drive/folders/1Mm5Gt7w92caYuhGfluS9ZAna3A1wKe3j" class="suggestions">Suggestions</a>
+			</div>
+			<div class="modal-footer">
+				<h3>Long live Infinitus!</h3>
+			</div>
+  		</div>
+	</div>
+
+	<div class="constant">
+		<a href="https://nonzeroconstants.github.io/website/">C</a>
+	</div>
+</body>

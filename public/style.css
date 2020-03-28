@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Orbitron&display=swap");
+
+body {
+	display: flex;
+	height: 100vh;
+	flex-flow: row wrap;
+	margin: 0;
+	width: 100vw;
+}
+
+h1 {
+	font-family: "Orbitron", sans-serif;
+	font-size: 10vw;
+	height: 15vw;
+	margin: 0;
+	text-align: center;
+	width: 100vw;
+}
+
+.candidate {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-family: "Orbitron", sans-serif;
+	height: calc(98vh - 15vw);
+	margin-bottom: 2vh;
+	overflow: visible;
+	width: 50vw;
+}
+
+.candidate > button {
+	box-shadow: inset 0px 1px 0px 0px white;
+	background: linear-gradient(to bottom, white 5%, #f6f6f6 100%);
+	background-color: white;
+	border: 1px solid #dcdcdc;
+	border-radius: 6px;
+	display: inline-block;
+	cursor: pointer;
+	color: black;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1vw;
+	font-weight: bold;
+	margin: 1vh;
+	outline: none;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px white;
+}
+
+.candidate > button:hover {
+	background: linear-gradient(to bottom, #f6f6f6 5%, white 100%);
+	background-color: #f6f6f6;
+}
+
+.candidate > button:active {
+	position: relative;
+	top: 2px;
+}
+
+.candidate > h2 {
+	font-size: 4vw;
+	margin: 0;
+	margin-bottom: 1vh;
+}
+
+.candidate > img {
+	cursor: pointer;
+	height: calc(min(40vh, 40vw));
+}
+
+.candidate > p {
+	font-size: 2vw;
+	margin: 0;
+	text-align: center;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 25vh;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: white;
+	height: 50vh;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	width: 80vw;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+.close {
+	color: white;
+	position: absolute;
+	top: -4px;
+	right: 8px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	height: 15vh;
+	font-family: "Orbitron", sans-serif;
+	margin: 0;
+	width: 80vw;
+}
+
+.modal-body {
+	height: 25vh;
+	margin-top: 4px;
+	font-family: "Open Sans", sans-serif;
+	font-size: calc(min(4vh, 4vw));
+}
+
+.modal-footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	height: 10vh;
+	font-family: "Orbitron", sans-serif;
+	margin: 0;
+	width: 80vw;
+}
+
+h2 {
+	margin: 0;
+	font-size: calc(min(6vh, 6vw));
+}
+
+h3 {
+	margin: 0;
+	font-size: calc(min(5vh, 5vw));
+}
+
+#cptzero-modal .modal-header,
+#cptzero-modal .modal-footer {
+	background-color: red;
+}
+
+#infinitus-modal .modal-header,
+#infinitus-modal .modal-footer {
+	background-color: blue;
+}
+
+a {
+	text-decoration: none;
+}
+
+#cptzero-modal a {
+	color: red;
+}
+
+#infinitus-modal a {
+	color: blue;
+}
+
+.suggestions {
+	color: #555555 !important;
+	margin-top: 10px;
+	font-size: calc((min(3vh, 3vw)));
+}
+
+.constant {
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	font-family: "Orbitron", sans-serif;
+	font-size: 16px;
+}
+
+.constant a {
+	color: black;
+}
